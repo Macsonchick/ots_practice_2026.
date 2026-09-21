@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6/"
+     xml:base="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Использовать_ингредиент -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Использовать_ингредиент">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Использовать_ингредиент"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Использовать_ингредиент"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Содержит_ингредиент -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Содержит_ингредиент">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Содержит_ингредиент"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Состоит_из_шага -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Состоит_из_шага">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Состоит_из_шага"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Состоит_из_шага"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Время_приготовления -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Время_приготовления">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Инструкция -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Инструкция">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Категория -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Категория">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Количество -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Количество">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Название -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Название">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Номер_шага -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Номер_шага">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Сложность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Сложность">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт"/>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Взбитие_яиц -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Взбитие_яиц">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Молоко"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Соль"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Яйцо"/>
+        <untitled-ontology-6:Инструкция>Взбейте яйца с молоком и солью</untitled-ontology-6:Инструкция>
+        <untitled-ontology-6:Номер_шага rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-6:Номер_шага>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Жарка_помидоров -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Жарка_помидоров">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Масло"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Помидор"/>
+        <untitled-ontology-6:Инструкция>Разогрейте сковороду, добавьте масло, обжарьте помидоры</untitled-ontology-6:Инструкция>
+        <untitled-ontology-6:Номер_шага rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-6:Номер_шага>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Масло -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Масло">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+        <untitled-ontology-6:Название>Масло</untitled-ontology-6:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Молоко -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Молоко">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+        <untitled-ontology-6:Название>Молоко</untitled-ontology-6:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Нарезка_помидоров -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Нарезка_помидоров">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+        <untitled-ontology-6:Использовать_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Помидор"/>
+        <untitled-ontology-6:Инструкция>Нарезать помидоры кусочками</untitled-ontology-6:Инструкция>
+        <untitled-ontology-6:Номер_шага rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-6:Номер_шага>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Помидор -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Помидор">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+        <untitled-ontology-6:Название>Помидор</untitled-ontology-6:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Приготовление -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Приготовление">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Шаг_приготовления"/>
+        <untitled-ontology-6:Инструкция>Влейте смесь в сковородку, готовьте 5 минут</untitled-ontology-6:Инструкция>
+        <untitled-ontology-6:Номер_шага rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-6:Номер_шага>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт_Омлет_с_помидорами -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт_Омлет_с_помидорами">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Рецепт"/>
+        <untitled-ontology-6:Содержит_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Масло"/>
+        <untitled-ontology-6:Содержит_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Молоко"/>
+        <untitled-ontology-6:Содержит_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Помидор"/>
+        <untitled-ontology-6:Содержит_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Соль"/>
+        <untitled-ontology-6:Содержит_ингредиент rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Яйцо"/>
+        <untitled-ontology-6:Состоит_из_шага rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Взбитие_яиц"/>
+        <untitled-ontology-6:Состоит_из_шага rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Нарезка_помидоров"/>
+        <untitled-ontology-6:Время_приготовления rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-6:Время_приготовления>
+        <untitled-ontology-6:Категория>Завтрак</untitled-ontology-6:Категория>
+        <untitled-ontology-6:Количество rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-6:Количество>
+        <untitled-ontology-6:Название>Омлет с помидорами</untitled-ontology-6:Название>
+        <untitled-ontology-6:Сложность>Легкий</untitled-ontology-6:Сложность>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Соль -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Соль">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+        <untitled-ontology-6:Название>Соль</untitled-ontology-6:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Яйцо -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Яйцо">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/8/untitled-ontology-6#Ингредиент"/>
+        <untitled-ontology-6:Название>Яйцо</untitled-ontology-6:Название>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
