@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Находится_где -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Находится_где">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Растёт_рядом -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Растёт_рядом">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Собирает_с -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Собирает_с">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Местонахождение_пасеки -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Местонахождение_пасеки">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Период_цветения_растений -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Период_цветения_растений">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Сила_семьи -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Сила_семьи">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Медоносная_семья -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Медоносная_семья">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Гречка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Гречка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+        <untitled-ontology-8:Находится_где rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_гречки"/>
+        <untitled-ontology-8:Период_цветения_растений>Июль-Август</untitled-ontology-8:Период_цветения_растений>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Подсолнух -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Подсолнух">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+        <untitled-ontology-8:Находится_где rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_подсолнуха"/>
+        <untitled-ontology-8:Период_цветения_растений>Июль-Август</untitled-ontology-8:Период_цветения_растений>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_гречки -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_гречки">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+        <untitled-ontology-8:Местонахождение_пасеки>Гречневое поле</untitled-ontology-8:Местонахождение_пасеки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_подсолнуха -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_подсолнуха">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пасека"/>
+        <untitled-ontology-8:Местонахождение_пасеки>Поле подсолничника</untitled-ontology-8:Местонахождение_пасеки>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Улей_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Улей_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+        <untitled-ontology-8:Находится_где rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_гречки"/>
+        <untitled-ontology-8:Собирает_с rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Гречка"/>
+        <untitled-ontology-8:Сила_семьи>Сильная</untitled-ontology-8:Сила_семьи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Улей_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Улей_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+        <untitled-ontology-8:Находится_где rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Поле_подсолнуха"/>
+        <untitled-ontology-8:Собирает_с rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Подсолнух"/>
+        <untitled-ontology-8:Сила_семьи>Слабая</untitled-ontology-8:Сила_семьи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Правило первое</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Находится_где"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Опыляемые_растения"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Собирает_с"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Растёт_рядом"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Правило второе</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Сила_семьи"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                <swrl:argument2>Сильная</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Собирает_с"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Гречка"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Медоносная_семья"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Правило третье</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Пчелиная_семья"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Сила_семьи"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                <swrl:argument2>Слабая</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Собирает_с"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-8#Подсолнух"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
